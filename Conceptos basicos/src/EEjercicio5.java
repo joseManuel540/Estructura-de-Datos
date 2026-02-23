@@ -1,4 +1,4 @@
-public class Ejercicio5 {
+public class EEjercicio5 {
     public static void main(String[] args) throws Exception {
         //Ejercicio 5 — Conversor de unidades
         //Una aplicación de cocina necesita convertir unidades

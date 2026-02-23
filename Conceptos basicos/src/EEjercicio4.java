@@ -1,4 +1,4 @@
-public class Ejercicio4 {
+public class EEjercicio4 {
     public static void main(String[] args) throws Exception {
         //Ejercicio 4 — Placa de un vehículo
         //El RUNT almacena datos básicos de vehículos. Modela la

@@ -1,4 +1,4 @@
-public class Ejercicio1 {
+public class EEjercicio1 {
     public static void main(String[] args) throws Exception {
         ///Ejercicio 1 — Ficha de un estudiante
         //Un sistema universitario necesita registrar la 

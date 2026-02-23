@@ -1,4 +1,4 @@
-public class Ejercicio3 {
+public class EEjercicio3 {
     public static void main(String[] args) throws Exception {
         //Ejercicio 3 — Sensor de temperatura
         //Un sensor industrial registra temperaturas

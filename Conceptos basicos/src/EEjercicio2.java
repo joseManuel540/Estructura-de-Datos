@@ -1,4 +1,4 @@
-public class Ejercicio2 {
+public class EEjercicio2 {
     public static void main(String[] args) throws Exception {
         ///Ejercicio 2 — Calculadora de una tienda
         ///Una tienda de barrio vende productos al por menor
