@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio3input {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         //Ejercicio 3 — Promedio de notas
         //Pide al usuario su nombre y 4 notas de un curso. Calcula el promedio 
         //y determina si aprobó (promedio >= 3.0).

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio4input {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         //Ejercicio 4 — Perfil de usuario
         //Pide al usuario los datos de su perfil: nombre, edad, ciudad, correo 
         // y si acepta términos y condiciones. Muestra un resumen indicando el 

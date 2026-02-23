@@ -1,5 +1,5 @@
 public class EEjercicio1 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         /*Ejercicio 1 — Ficha de un estudiante
         Un sistema universitario necesita registrar la 
         información básica de un estudiante: nombre completo, 

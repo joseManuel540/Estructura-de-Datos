@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio2input {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         //Ejercicio 2 — Conversor de temperatura
         //Pide al usuario una temperatura en Celsius y conviértela a
         //  Fahrenheit y Kelvin.

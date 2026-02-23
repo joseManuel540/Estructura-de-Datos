@@ -1,5 +1,5 @@
 public class EEjercicio5 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         /*Ejercicio 5 — Conversor de unidades
         Una aplicación de cocina necesita convertir unidades:
         Declara una variable tazas (double) con la cantidad de tazas de un 

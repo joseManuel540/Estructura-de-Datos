@@ -1,5 +1,5 @@
 public class EEjercicio3 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         /*Ejercicio 3 — Sensor de temperatura
         Un sensor industrial registra temperaturas
         Temperatura actual en Celsius (double)

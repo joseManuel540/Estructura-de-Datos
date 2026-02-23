@@ -1,5 +1,5 @@
 public class EEjercicio2 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         /*Ejercicio 2 — Calculadora de una tienda
         Una tienda de barrio vende productos al por menor
         Precio unitario de un producto (double)

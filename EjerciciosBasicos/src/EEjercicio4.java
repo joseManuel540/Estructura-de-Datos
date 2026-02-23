@@ -1,5 +1,5 @@
 public class EEjercicio4 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         /*Ejercicio 4 — Placa de un vehículo
         El RUNT almacena datos básicos de vehículos. Modela la información de
         un carro con:
