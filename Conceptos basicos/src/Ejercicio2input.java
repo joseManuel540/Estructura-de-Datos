@@ -15,7 +15,6 @@ public class Ejercicio2input {
         double Fahrenheit = (tempC * 9/5) + 32;
         double Kelvin = tempC + 273.15;
 
-
         System.out.println(tempC + " °C = "+ Fahrenheit + " °F = "+ Kelvin + " °K");
     }
 }

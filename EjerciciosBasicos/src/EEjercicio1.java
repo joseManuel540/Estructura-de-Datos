@@ -12,7 +12,7 @@ public class EEjercicio1 {
         double promedio = 3.85;
         Boolean matriculado = true;
         
-        System.out.println("=== Ficha estudiante ===");
+        System.out.println("======== Ficha estudiante ========");
         System.out.println("nombre: "+ nombre);
         System.out.println("codigo: "+ codigo);
         System.out.println("semestre: "+ semestre);
