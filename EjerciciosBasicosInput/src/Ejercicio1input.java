@@ -1,11 +1,12 @@
+//Pide al usuario el nombre de un producto, la cantidad comprada y el
+// precio unitario. Calcula el subtotal, aplica un IVA del 19% y 
+// muestra el recibo con el total a pagar.
+
 import java.util.Scanner;
 
 public class Ejercicio1input {
     
     public static void main(String[] args){
-        //Pide al usuario el nombre de un producto, la cantidad comprada y el
-        // precio unitario. Calcula el subtotal, aplica un IVA del 19% y 
-        // muestra el recibo con el total a pagar.
         Scanner sc = new Scanner(System.in);
         
         System.out.println("Ingrese el nombre del producto:");

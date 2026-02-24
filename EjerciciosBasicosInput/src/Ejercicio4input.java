@@ -1,11 +1,12 @@
+//Ejercicio 4 — Perfil de usuario
+//Pide al usuario los datos de su perfil: nombre, edad, ciudad, correo 
+// y si acepta términos y condiciones. Muestra un resumen indicando el 
+// tipo de dato que se usó para cada campo.
+
 import java.util.Scanner;
 
 public class Ejercicio4input {
     public static void main(String[] args){
-        //Ejercicio 4 — Perfil de usuario
-        //Pide al usuario los datos de su perfil: nombre, edad, ciudad, correo 
-        // y si acepta términos y condiciones. Muestra un resumen indicando el 
-        // tipo de dato que se usó para cada campo.
 
         Scanner sc = new Scanner(System.in);
         

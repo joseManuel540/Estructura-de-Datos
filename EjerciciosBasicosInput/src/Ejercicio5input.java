@@ -1,10 +1,11 @@
+//Ejercicio 5 — Calculadora de IMC
+//Pide nombre, peso en kg y altura en metros. Calcula el IMC y 
+//clasifícalo.
+
 import java.util.Scanner;
 
 public class Ejercicio5input {
     public static void main(String[] args)  {
-        //Ejercicio 5 — Calculadora de IMC
-        //Pide nombre, peso en kg y altura en metros. Calcula el IMC y 
-        //clasifícalo.
         
         Scanner sc = new Scanner(System.in);
         
