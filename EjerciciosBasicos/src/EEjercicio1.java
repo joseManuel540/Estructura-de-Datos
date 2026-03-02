@@ -19,7 +19,12 @@ public class EEjercicio1 {
         System.out.println("codigo: "+ codigo);
         System.out.println("semestre: "+ semestre);
         System.out.println("promedio: "+ promedio);
-        System.out.println("matriculado: "+ matriculado);
+        if (matriculado) {
+            System.out.println("Se encuentra matriculado");
+        }
+        else {
+            System.out.println("No se encuentra matriculado");
+        }
     
     }
 }
