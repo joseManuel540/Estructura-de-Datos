@@ -21,6 +21,6 @@ public class Ejercicio5 {
                 contador ++;
             } 
         }   
-        System.out.println("Los estudiantes que sacaron una nota de 5 fueron: " + contador);
+        System.out.println("Los estudiantes que sacaron una nota de 5 fueron un total de: " + contador);
     }
 }

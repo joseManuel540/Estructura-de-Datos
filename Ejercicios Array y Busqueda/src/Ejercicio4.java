@@ -26,6 +26,7 @@ public class Ejercicio4 {
 
         if (codigos[medio] == opcion) {
             System.out.println("Se encontro el codigo en la posicion: " + medio);
+            System.out.println("Usted esta en la listad de pagos al dia, puede ingresar");
             return;
 
         } else if (codigos[medio] < opcion) {
@@ -35,6 +36,6 @@ public class Ejercicio4 {
             vAlto = medio - 1;  
         }
         }   
-        System.out.println("No se encontro el producto");
+        System.out.println("No se encontro el codigo en la lista de pagos al dia, no puedes ingresar");
     }
 }

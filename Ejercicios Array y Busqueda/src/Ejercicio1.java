@@ -9,7 +9,7 @@ un orden numérico específico. */
 public class Ejercicio1 {
     public static void main(String[] args) {
         
-        int[] codigos = {123456, 234567,345678, 456789, 770123, 678912};
+        int[] codigos = {123456, 234567,945678, 456789, 770123, 678912};
         int codigoBarra = 770123;
 
         System.out.println("Usted ha escaneado el producto con codigo de barras 770123");
