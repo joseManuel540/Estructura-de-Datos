@@ -16,7 +16,7 @@ public class Ejercicio1 {
 
         for (int i = 0; i < codigos.length; i++) {
             if (codigos[i] == codigoBarra) {
-                System.out.println("El producto se encontro en la posicion: " + (i+1));
+                System.out.println("El producto se encontro en la posicion: " + i);
                 return;
             } 
         }   
