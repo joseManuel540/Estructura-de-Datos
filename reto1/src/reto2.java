@@ -14,15 +14,19 @@ public class reto2 {
             cuenta[i] = sc.nextInt();
             System.out.println("Ingrese el monto de la cuenta " + cuenta[i]);
             montos[i] = sc.nextDouble();
+        }
+        sc.close();
 
-            
+        for (int i = 0; i < montos.length; i++) {
             if (montos[i] >  5000) {
+                System.out.println("\nLa cuenta #" + cuenta[i] + " ingreso un monto mayor a 5000");
+                boolean vip = false;
 
                 while (inicio <= vAlto) {
                 int medio = inicio + (vAlto - inicio) / 2;
 
                 if (cuentasVIP[medio] == cuenta[i]) {
-                    System.out.println("Usted es vip");
+                    vip = true;
                     break;
 
                 } else if (cuentasVIP[medio] < cuenta[i]) {
@@ -32,11 +36,15 @@ public class reto2 {
                     vAlto = medio - 1;  
             }
             }
-            System.out.println("Alerta de fraude; cuenta no autorizada para montos altos");
+            if (vip) {
+                System.out.println("Usted es vip");
+            } else {
+                System.out.println("Alerta de fraude; cuenta no autorizada para montos altos");
+            }
+            
+            
         }
         }
-        sc.close();
-
         
 
         
