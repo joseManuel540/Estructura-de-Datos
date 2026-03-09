@@ -40,17 +40,8 @@ public class reto2 {
                 System.out.println("Usted es vip");
             } else {
                 System.out.println("Alerta de fraude; cuenta no autorizada para montos altos");
-            }
-            
-            
+            } 
         }
         }
-        
-
-        
-
-
-
-
     }
 }
