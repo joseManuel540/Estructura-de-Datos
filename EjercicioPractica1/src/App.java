@@ -44,7 +44,7 @@ public class App {
 
         System.out.println("\nPorfavor ingrese el id a buscar: ");
         int Buscarid = sc.nextInt();
-        BuscarId(producto, Buscarid);
+        busquedaBinaria(producto, Buscarid);
 
         sc.close();
 
@@ -74,18 +74,24 @@ public class App {
         }
     }
 
-    public static void BuscarId(Producto[] productos, int id){
-        boolean encontrado = false;
-        for (int i = 0; i < productos.length; i++) {
-            if (productos[i].Id == id) {
-                System.out.println("El producto se encontro: ");
-                productos[i].MostrarInformacion();
-                encontrado = true;
-            } 
+
+    public static int busquedaBinaria(Producto[] arr, int objetivo) {
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;   // evita overflow
+            if (arr[mid].Id == objetivo) {
+                return mid;
+                
+            } else if (arr[mid].Id < objetivo) {
+                low = mid + 1;    
+                // buscar en mitad derecha
+                
+            } else {
+                high = mid - 1;   // buscar en mitad izquierda
+            }
         }
-        if (!encontrado) {
-            System.out.println("El producto no se encontro");
-        }
+        return -1;
     }
 
 }
