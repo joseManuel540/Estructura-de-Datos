@@ -1,7 +1,7 @@
-public class Lista {
+public class ListaProductos {
     Producto cabeza;
 
-    public Lista(){
+    public ListaProductos(){
         this.cabeza = null;
     }
 

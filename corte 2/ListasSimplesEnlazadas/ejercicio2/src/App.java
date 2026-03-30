@@ -14,7 +14,7 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
         int opcion;
-        Lista lista = new Lista();
+        ListaProductos lista = new ListaProductos();
 
         do {
             System.out.println("\n=================================");
