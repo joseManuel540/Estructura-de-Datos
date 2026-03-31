@@ -28,9 +28,7 @@ public class ListaProductos {
 
         while (actual != null) {
             if (actual.DiasParaVencer < 5) {
-                System.out.println("Producto: " + actual.Nombre +
-                        " | Cantidad: " + actual.Cantidad +
-                        " | Días: " + actual.DiasParaVencer);
+                System.out.println("Producto: " + actual.Nombre + " | Cantidad: " + actual.Cantidad + " | Días: " + actual.DiasParaVencer);
             }
             actual = actual.siguiente;
         }

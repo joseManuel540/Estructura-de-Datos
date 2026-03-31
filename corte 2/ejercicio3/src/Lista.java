@@ -57,10 +57,7 @@ public class Lista {
         }
         Vuelo actual = cabeza;
         while (actual != null) {
-            System.out.println("Vuelo: " + actual.numeroVuelo +
-                    " | Aerolínea: " + actual.aerolinea +
-                    " | Combustible: " + actual.combustibleRestante +
-                    " | Pasajeros: " + actual.pasajeros);
+            System.out.println("Vuelo: " + actual.numeroVuelo + " | Aerolínea: " + actual.aerolinea + " | Combustible: " + actual.combustibleRestante + " | Pasajeros: " + actual.pasajeros);
             actual = actual.siguiente;
         }
     }
