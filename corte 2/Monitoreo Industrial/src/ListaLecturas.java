@@ -30,9 +30,6 @@ public class ListaLecturas {
         }
 
         System.out.println("\nLectura con mayor temperatura:");
-        System.out.println("Sensor: " + max.idSensor +
-                " | Temp: " + max.temperatura +
-                " | Presión: " + max.presion +
-                " | Hora: " + max.hora);
+        System.out.println("Sensor: " + max.idSensor + " | Temp: " + max.temperatura + " | Presión: " + max.presion + " | Hora: " + max.hora);
     }
 }
