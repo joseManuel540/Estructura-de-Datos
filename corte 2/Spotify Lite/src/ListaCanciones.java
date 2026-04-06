@@ -41,13 +41,11 @@ public class ListaCanciones {
 
         int minutos = total / 60;
         int segundos = total % 60;
-
         System.out.printf("Duración total: %02d:%02d\n", minutos, segundos);
     }
     
     public void mostrar(){
         Cancion actuall=cabeza;
-
         while (actuall != null) {
             System.out.println("\nTitulo: " + actuall.titulo + "\nArtista: " + actuall.artista + "\nDuracion segundos: " + actuall.duracionSegundos + "\nGenero: " + actuall.genero);
             actuall = actuall.siguiente;

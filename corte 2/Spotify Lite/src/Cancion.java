@@ -1,4 +1,4 @@
-/*La Clase Cancion (Nodo): Debe contener titulo (String), artista (String), duracionSegundos (int) y genero (String). */
+/*La Clase cancion (Nodo): Debe contener titulo (String), artista (String), duracionSegundos (int) y genero (String). */
 public class Cancion {
     String titulo;
     String artista;
