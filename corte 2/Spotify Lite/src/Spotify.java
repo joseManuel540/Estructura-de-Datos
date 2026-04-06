@@ -31,7 +31,6 @@ public class Spotify {
 
             switch (opcion) {
                 case 1:
-                case 2:
                     System.out.print("Título: ");
                     String titulo = sc.nextLine();
                     System.out.print("Artista: ");
@@ -43,12 +42,20 @@ public class Spotify {
                     String genero = sc.nextLine();
 
                     Cancion nueva = new Cancion(titulo, artista, duracion, genero);
+                    lista.agregarAlFinal(nueva);
+                case 2:
+                    System.out.print("Título: ");
+                    String titulo2 = sc.nextLine();
+                    System.out.print("Artista: ");
+                    String artista2 = sc.nextLine();
+                    System.out.print("Duración (segundos): ");
+                    int duracion2 = sc.nextInt();
+                    sc.nextLine();
+                    System.out.print("Género: ");
+                    String genero2 = sc.nextLine();
 
-                    if (opcion == 1) {
-                        lista.agregarAlFinal(nueva);
-                    } else {
-                        lista.agregarDespuesActual(nueva);
-                    }
+                    Cancion nueva2 = new Cancion(titulo2, artista2, duracion2, genero2);
+                    lista.agregarDespuesActual(nueva2);
                     break;
 
                 case 3:
