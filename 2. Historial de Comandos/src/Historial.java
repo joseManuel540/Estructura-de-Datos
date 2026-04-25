@@ -18,8 +18,8 @@ public class Historial {
         return cabeza == null;
     }
 
-    public void agregarComando(String texto, boolean exitoso, String directorio) {
-        exitoso = true;
+    public void agregarComando(String texto, String directorio) {
+        boolean exitoso = true;
         Comando nueva = new Comando(texto, exitoso, directorio);
         if (cabeza == null) {
             nueva.siguiente = nueva;
@@ -63,36 +63,34 @@ public class Historial {
         System.out.println("  (regresa a " + cabeza.texto + ")");
     }
 
-    public Comando arriba(){
+    public void arriba(){
         if (estaVacia()) {
             System.out.println("No hay comandos");
-            return null;
-        }else if (this.cursor.anterior == cabeza) {
-            System.out.println("No hay mas comandos");
-            return this.cursor;
+        } else {
+            System.out.println("Usted esta ahora en el cursor: " + this.cursor.anterior.texto);
+        this.cursor = this.cursor.anterior;
         }
-        return this.cursor.anterior;
+        
     }
 
 
-    public Comando abajo(){
+    public void abajo(){
         if (estaVacia()) {
             System.out.println("No hay comandos");
-            return null;
-        }else if (this.cursor.siguiente == cabeza) {
-            System.out.println("No hay mas comandos");
-            return this.cursor;
+        } else {
+            System.out.println("Usted esta ahora en el cursor: " + this.cursor.siguiente.texto);
+        this.cursor = this.cursor.siguiente;
         }
-        return this.cursor.siguiente;
     }
 
-    public void eliminarActual(Comando actual){
-        actual = this.cursor;
+    public void eliminarActual(){
+        Comando actual = this.cursor;
         if (estaVacia()) {
             System.out.println("No hay comandos");
         }else if (actual == cabeza && actual == cola) {
             actual.siguiente = null;
             actual.anterior = null;
+            cola = cabeza = null;
             this.cursor = null;
         }else if (actual == cabeza) {
             actual.siguiente.anterior = cola;

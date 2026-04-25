@@ -17,17 +17,16 @@ public class App {
         Scanner sc = new Scanner(System.in);
         int opcion;
         Historial historial = new Historial();
-        Comando fotoactual = null;
 
         do {
             System.out.println("\n==============================================");
-            System.out.println(" Galeria Interactiva  — Menú Principal");
+            System.out.println(" Terminal  — Menú Principal");
             System.out.println("==============================================");
-            System.out.println("  [1] Agregar foto");
-            System.out.println("  [2] Mostrar siguiente foto");
-            System.out.println("  [3] Mostrar foto anterior");
-            System.out.println("  [4] recorrer lista hacia delante");
-            System.out.println("  [5] recorrer lista hacia atras");
+            System.out.println("  [1] Agregar comando");
+            System.out.println("  [2] Navegar hacia arriba");
+            System.out.println("  [3] Navegar hacia abajo");
+            System.out.println("  [4] Eliminar comando actual");
+            System.out.println("  [5] Mostrar cursor actual");
             System.out.println();
             System.out.println("  [0] Salir");
             System.out.println("==============================================");
@@ -39,50 +38,31 @@ public class App {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Ingrese el nombre: ");
-                    String nombre = sc.nextLine();
-                    System.out.println("Ingrese el tamaño: ");
-                    double tamaño = sc.nextDouble();
-                    sc.nextLine();
-                    System.out.println("Ingrese la resolucion: ");
-                    String reso = sc.nextLine();
-                    Fotografia foto = new Fotografia(nombre, tamaño, reso);
-                    galeria.agregarFoto(foto);
-                    fotoactual = foto;
+                    System.out.println("Ingrese el texto: ");
+                    String t = sc.nextLine();
+                    System.out.println("Ingrese el direcotrio: ");
+                    String d = sc.nextLine();
+                    historial.agregarComando(t,d);
                     break;
 
                 case 2:
-                    if (fotoactual != null) {
-                        System.out.println("foto actual: " + fotoactual.nombreArchivo);
-                        fotoactual = galeria.fotoSiguiente(fotoactual);
-                        System.out.println("Siguiente foto: " + fotoactual.nombreArchivo);
-                    } else {
-                        System.out.println("No hay fotos");
-                    }
+                    historial.arriba();
                     break;
 
                 case 3:
-                    if (fotoactual != null) {
-                        System.out.println("foto actual: " + fotoactual.nombreArchivo);
-                        fotoactual = galeria.fotoAnterior(fotoactual);
-                        System.out.println("foto anterior: " + fotoactual.nombreArchivo);
-                    } else {
-                        System.out.println("No hay fotos");
-                    }
+                    historial.abajo();
                     break;
 
                 case 4:
-                    System.out.println("La galeria de fotos es: ");
-                    galeria.mostrarAdelante();
+                    historial.eliminarActual();
                     break;
 
                 case 5:
-                    System.out.println("La galeria de fotos desde la ultima es: ");
-                    galeria.mostrarAtras();
+                    historial.mostrarCursor();
                     break;
 
                 case 0:
-                    System.out.println("¡Saliendo del módulo de Listas Dobles!");
+                    System.out.println("¡Saliendo del módulo de Listas Dobles Circulares!");
                     break;
                 default:
                     System.out.println("Opción no válida.");
