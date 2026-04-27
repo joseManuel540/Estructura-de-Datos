@@ -27,6 +27,7 @@ public class App {
             System.out.println("  [3] Navegar hacia abajo");
             System.out.println("  [4] Eliminar comando actual");
             System.out.println("  [5] Mostrar cursor actual");
+            System.out.println("  [6] mostrar historial completo");
             System.out.println();
             System.out.println("  [0] Salir");
             System.out.println("==============================================");
@@ -60,6 +61,9 @@ public class App {
                 case 5:
                     historial.mostrarCursor();
                     break;
+
+                case 6:
+                    historial.mostrarHistorial();
 
                 case 0:
                     System.out.println("¡Saliendo del módulo de Listas Dobles Circulares!");
