@@ -59,17 +59,18 @@ public class Farmacia {
         System.out.println("===========================================");
     }
     public void validarDespacho() {
+
         if (estaVacia()) {
         System.out.println("La pila está vacía");
         return;
         }
-        while (!estaVacia() && peek().diasParaVencer < 10) {
-        Medicamento eliminada = pop();
-        System.out.println("Medicamento casi vencido retirado: " + eliminada.nombre);
+
+        while (peek().diasParaVencer < 10) {
+            Medicamento eliminada = pop();
+            System.out.println("Medicamento casi vencido retirado: " + eliminada.nombre); 
         }
         if (!estaVacia()) {
-            System.out.println(
-                "Se encontró un medicamento seguro: " + peek().nombre);
+            System.out.println("Se encontró un medicamento seguro: " + peek().nombre);
         }
     }
 }

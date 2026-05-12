@@ -61,7 +61,7 @@ public class App {
                 default:
                     System.out.println("Opción no válida.");
             }
-        } while (opcion != 5);
+        } while (opcion != 0);
 
         scanner.close();
     }

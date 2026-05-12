@@ -10,19 +10,19 @@ debe ser retirado automáticamente y el sistema debe revisar el siguiente. El pr
 
 import java.util.Scanner;
 
-public class App {
+public class App4 {
     public static void main(String[] args) throws Exception {
         Farmacia lista = new Farmacia();
         Scanner scanner = new Scanner(System.in);
 
         int opcion;
         do {
-            System.out.println("\n--- SISTEMA DE LINEA DE ENSAMBLAJE ---");
-            System.out.println("1. Ver contenedores piezas");
-            System.out.println("2. Registrar nueva pieza (Push)");
-            System.out.println("3. Retirar pieza del tope (Pop)");
-            System.out.println("4. Contar piezas");
-            System.out.println("5. Limpiar Hasta Pieza Defectuosa");
+            System.out.println("\n--- SISTEMA DE FARMACIA ---");
+            System.out.println("1. Ver medicamentos");
+            System.out.println("2. Registrar nuevo medicamento (Push)");
+            System.out.println("3. Retirar medicamento del tope (Pop)");
+            System.out.println("4. Contar medicamentos");
+            System.out.println("5. Validar Despacho");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = scanner.nextInt();
@@ -35,14 +35,14 @@ public class App {
                     break;
                 case 2:
                     System.out.print("Nombre: "); String n = scanner.nextLine();
-                    System.out.print("Numero de serie: "); String num = scanner.nextLine();
-                    System.out.print("Esta defectuosa? (true/false) : "); boolean esD = scanner.nextBoolean();
+                    System.out.print("Lote: "); String l = scanner.nextLine();
+                    System.out.print("Dias para vencer"); int DiasV = scanner.nextInt();
                     scanner.nextLine();
-                    lista.push(new Pieza(n, num, esD));
-                    System.out.println("Pieza apilada correctamente.");
+                    lista.push(new Medicamento(n,l,DiasV));
+                    System.out.println("Medicamento apilado correctamente.");
                     break;
                 case 3:
-                    Pieza retirado = lista.pop();
+                    Medicamento retirado = lista.pop();
                     if (retirado != null) {
                         System.out.println("Se ha retirado: " + retirado);
                     } else {
@@ -50,11 +50,11 @@ public class App {
                     }
                     break;
                 case 4:
-                    System.out.println("Hay un total de: " + lista.getTamanio() + " Piezas");
+                    System.out.println("Hay un total de: " + lista.getTamanio() + " Medicamentos");
                     break;
 
                 case 5:
-                    lista.limpiarHastaDefectuoso();
+                    lista.validarDespacho();
                     break;
                 case 0:
                     System.out.println("Saliendo del sistema...");
@@ -62,7 +62,7 @@ public class App {
                 default:
                     System.out.println("Opción no válida.");
             }
-        } while (opcion != 5);
+        } while (opcion != 0);
 
         scanner.close();
     }
