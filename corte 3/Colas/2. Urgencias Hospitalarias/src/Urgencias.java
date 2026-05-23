@@ -72,17 +72,14 @@ public class Urgencias {
     }
 
     public void antenderTodos(){
-        int tamaño = 0;
-        Paciente actual = salida;
-        while (actual != null) {
+        int cantidad = 0;
+        while (!isEmpty()) {
+
             Paciente atendido = dequeue();
-            if (atendido != null) {
-                System.out.println("Cedula:" + atendido.cedula + " Nombre:" + atendido.nombreCompleto + " edad: " + atendido.edad + " Sintoma: " + atendido.sintomaPrincipal);
-                tamaño = tamaño + 1;
-                System.out.println("Paciente atendido con exito");
-            }
-            actual = actual.siguiente;
+            System.out.println("Cedula: " + atendido.cedula +" Nombre: " + atendido.nombreCompleto +" Edad: " + atendido.edad +" Sintoma: " + atendido.sintomaPrincipal);
+            cantidad = cantidad + 1;
+            System.out.println("Paciente atendido con exito");
         }
-        System.out.println("Se atendieron un total de: " + tamaño + " Pacientes");
+        System.out.println("Se atendieron un total de: " + cantidad + " pacientes");
     }
 }
